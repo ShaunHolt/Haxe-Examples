@@ -1,0 +1,9 @@
+<module>
+    <resources>
+        <resource path="assets" prefix="assets" />
+    </resources>
+    <components>
+        <class package="." />
+        <class file="assets/my-super-component.xml" />
+    </components>
+</module>

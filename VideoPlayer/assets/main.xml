@@ -1,0 +1,20 @@
+
+<vbox style="padding: 15px;">
+    <hbox>
+        <label text="Frame Size:" />
+        <slider min="200" max="500" pos="500" onchange="theFrame0.width = this.pos" />
+        <slider min="200" max="500" pos="400" onchange="theFrame0.height = this.pos" />
+    </hbox>
+    <grid columns="3">
+        
+        <frame id="theFrame0" text="Test Video" width="300" height="200">
+            <vbox width="100%" height="100%">
+                <video id="theVideo" width="100%" height="100%" file="https://www.w3schools.com/html/mov_bbb.mp4" />
+                <hbox width="100%">
+                    <button width="100%" text="Play" onclick="theVideo.play();" />
+                    <button width="100%" text="Pause" onclick="theVideo.pause();" />
+                </hbox>
+            </vbox>    
+        </frame>
+    </grid>
+</vbox>

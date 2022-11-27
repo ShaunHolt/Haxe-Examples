@@ -1,0 +1,22 @@
+<vbox>
+    <script>
+        var someProp(get, set):String;
+        private function get_someProp():String {
+            return fooButton.text;
+        }
+        private function set_someProp(value:String):String {
+            fooButton.text = value;
+            return value;
+        }
+        private override function onReady() {
+            super.onReady();
+            barButton.text = "Component is ready!";
+        }
+        
+    </script>
+    <hbox>
+        <button id="fooButton" text="Foo" />
+        <button id="barButton" text="Bar" />
+    </hbox>
+    <button text="Entire custom component created from single xml file - no code" />
+</vbox>

@@ -1,0 +1,3 @@
+<vbox style="padding: 5px;">
+    <my-super-component someProp="this was set from xml" />
+</vbox>
