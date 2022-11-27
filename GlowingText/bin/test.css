@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+}
+
+.glow_box {
+	display: inline-block;
+	width: 1080px;
+	height: 44px;
+	position: absolute;
+	top: calc(50% - 44px);
+	left: calc(50% - 540px);
+	font-family: "Droid Sans", sans-serif;
+	font-weight: 700;
+	font-size:2vw; /* responsive text: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_text */
+	line-height: 88px; /* the same as DIV container height to center the text */
+	text-align: center;
+	vertical-align: middle;
+}
+
+.glow_text {
+	position: relative;
+	background: transparent;
+	color: #f5f5f5;
+	font-variant: small-caps;
+	letter-spacing: 0.05em;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	text-shadow: none;
+	
+	transition: all 0.6s linear; /* vendorless fallback */
+	-o-transition: all 0.6s linear; /* opera */
+	-ms-transition: all 0.6s linear; /* IE 10 */
+	-moz-transition: all 0.6s linear; /* Firefox */
+	-webkit-transition: all 0.6s linear; /*safari and chrome */
+}
+
+.glow_text:hover {
+  /*
+	text-shadow:
+    0 0 5px rgb(255, 255, 255, 1),
+		0 0 10px rgb(255, 255, 255, 1),
+		0 0 20px rgb(255, 255, 255, 1),
+		0 0 30px rgb(255, 255, 255, 1),
+    -1px 0 cyan,
+    0 1px cyan,
+    1px 0 cyan,
+    0 -1px cyan;
+  -webkit-text-stroke: 1px cyan;
+  */
+	text-shadow:
+    0 0 5px rgb(255, 255, 255, 1),
+		0 0 10px rgb(255, 255, 255, 1),
+		0 0 20px rgb(255, 255, 255, 1),
+		0 0 30px rgb(255, 255, 255, 1);
+}
+
+p.glow_text span.inner {
+	position: relative;
+	z-index: 2;
+}
+
+.glow_box p.glow_text span.inner {
+	position: relative;
+	content: 'What Will You Achieve Today?';
+	z-index: 2;
+}
+.glow_box:hover p.glow_text span.inner {
+	display: none;
+}
+.glow_box:hover p.glow_text:after {
+	position: relative;
+	content: 'Make it happen!';
+	z-index: 3;
+	color: #111;
+}
