@@ -1,6 +1,8 @@
 import js.Browser.*;
 import js.html.*;
 
+//Converting of this link to Haxe: https://www.codingnepalweb.com/digital-clock-using-javascript-2/
+
 class Test {
 	private static var videoElement:VideoElement;
 
