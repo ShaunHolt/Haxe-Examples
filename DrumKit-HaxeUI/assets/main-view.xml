@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox width="100%" height="100%">
+    <section-header text="Drum Kit" />
+    <vbox width="100%" height="100%">
+<style>
+            .bitmap-button {
+                background: none;
+                padding: 6px 8px;
+                border: none;
+                color: #CCCCCC;
+                background-image: "images/bitmap_button.png";
+                background-image-clip: 0px 0px 26px 65px;
+                background-image-slice: 3px 3px 24px 62px;
+            }
+</style>        
+        <hbox width="100%" height="100%">
+            <button text="j" icon="assets/img/snare.png"  iconPosition="top" styleName="bitmap-button" />
+            <button text="l" icon="assets/img/kick.png"   iconPosition="top" styleName="bitmap-button" />
+            <button text="k" icon="assets/img/crash.png"  iconPosition="top" styleName="bitmap-button" />
+        </hbox>
+        <hbox width="100%">
+            <button text="w" icon="assets/img/tom1.png"  iconPosition="top" styleName="bitmap-button" />
+            <button text="s" icon="assets/img/tom3.png"  iconPosition="top" styleName="bitmap-button" />
+            <button text="d" icon="assets/img/tom4.png"  iconPosition="top" styleName="bitmap-button" />
+            <button text="a" icon="assets/img/tom2.png"  iconPosition="top" styleName="bitmap-button" />
+
+        </hbox>
+    </vbox>
+</vbox>    
